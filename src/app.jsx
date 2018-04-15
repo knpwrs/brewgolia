@@ -5,6 +5,7 @@ import glamorous, {
   H2,
   P,
 } from 'glamorous';
+import Search from './search';
 
 const Link = glamorous.a({
   color: 'inherit',
@@ -33,14 +34,7 @@ export default () => (
     <P textAlign="center">
       This is a listing of all packages available via the Homebrew package manager for macOS.
     </P>
-    <Div
-      height="250px"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-    >
-      Search Results
-    </Div>
+    <Search />
     <P textAlign="center">
       Brewgolia was created by <Link href="https://knpw.rs">Ken Powers</Link>.
       Powered by <Link href="https://www.algolia.com/">Algolia</Link>.
