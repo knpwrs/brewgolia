@@ -13,6 +13,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.join(context, 'dist'),
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   module: {
     rules: [{
       enforce: 'pre',
