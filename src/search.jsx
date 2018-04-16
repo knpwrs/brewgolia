@@ -1,9 +1,7 @@
 import React from 'react';
-import {
-  InstantSearch,
-  SearchBox,
-} from 'react-instantsearch/dom';
+import { InstantSearch } from 'react-instantsearch/dom';
 import { Div } from 'glamorous';
+import SearchInput from './search-input';
 import Hits from './hits';
 
 export default () => (
@@ -13,7 +11,7 @@ export default () => (
     indexName={process.env.ALGOLIA_INDEX}
   >
     <Div display="flex" justifyContent="center">
-      <SearchBox />
+      <SearchInput />
     </Div>
     <Hits />
   </InstantSearch>

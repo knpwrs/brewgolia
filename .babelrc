@@ -4,5 +4,13 @@
       modules: false
     }],
     "react"
+  ],
+  "plugins": [
+    ["transform-imports", {
+      "recompose": {
+        "transform": "recompose/${member}",
+        "preventFullImport": true
+      }
+    }]
   ]
 }
