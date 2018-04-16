@@ -1,11 +1,10 @@
 import React from 'react';
 import {
-  Hits,
   InstantSearch,
   SearchBox,
 } from 'react-instantsearch/dom';
 import { Div } from 'glamorous';
-import Hit from './hit';
+import Hits from './hits';
 
 export default () => (
   <InstantSearch
@@ -16,6 +15,6 @@ export default () => (
     <Div display="flex" justifyContent="center">
       <SearchBox />
     </Div>
-    <Hits hitComponent={Hit} />
+    <Hits />
   </InstantSearch>
 );
