@@ -35,7 +35,7 @@ export default () => (
       This is a listing of all packages available via the Homebrew package manager for macOS.
     </P>
     <Search />
-    <P textAlign="center">
+    <P textAlign="center" margin="2em 0">
       Brewgolia was created by <Link href="https://knpw.rs">Ken Powers</Link>.
       Powered by <Link href="https://www.algolia.com/">Algolia</Link>.
       View source code on <Link href="https://github.com/knpwrs/brewgolia">Github</Link>.
