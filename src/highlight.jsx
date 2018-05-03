@@ -7,8 +7,10 @@ import hitShape from './shapes/hit';
 const makeKey = (i, value) => `part-${i}-${value}`;
 
 const Mark = glamorous.mark({
-  background: '#f9d094',
-  color: '#2e2a24',
+  background: 'transparent',
+  color: 'inherit',
+  fontWeight: 'bold',
+  textDecoration: 'underline',
 });
 
 const Highlight = ({ highlight, attribute, hit }) => {
